@@ -5,15 +5,25 @@
    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
    <title>3 Column Layout</title>
    <link rel="stylesheet" href="assets/css/layout.css">
+   <link rel="stylesheet" href="assets/css/slider.css">
+   
 </head>
 <body>
 <header class="header"><a href="index.html"><img src="assets/img/logo.png" width="250px"></a></header>
 <div class="container">
    <main class="center column">
        <article>
-           <h1>Heading</h1>
-           <p></p>
+        <h1>Slider</h1>
+          <div id="mySlider">
+             
+           
+           </div>
+
+           <button class="prev" onclick="prevSlide()">Prev</button>
+           <button class="next" onclick="nextSlide()">Next</button>
+           
        </article>
+       <script src="assets/js/script.js"></script>
    </main>
    <nav class="left column">
        <h3>Left heading</h3>
@@ -26,7 +36,7 @@
            <li><a href="tablet.html">Tablet</a></li>
            <li><a href="media.html">Media</a></li>
            <li><a href="slider.html">Slider</a></li>
-          <!--  <li><a href="slider2.html">Slider</a></li> -->
+           <!-- <li><a href="slider2.html">Slider</a></li> -->
        </ul>
    </nav>
    <div class="right column">

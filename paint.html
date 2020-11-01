@@ -5,15 +5,38 @@
    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
    <title>3 Column Layout</title>
    <link rel="stylesheet" href="assets/css/layout.css">
+   <link rel="stylesheet" href="assets/css/paint.css">
+   
 </head>
 <body>
 <header class="header"><a href="index.html"><img src="assets/img/logo.png" width="250px"></a></header>
 <div class="container">
    <main class="center column">
        <article>
-           <h1>Heading</h1>
-           <p></p>
+        <h1>Canvas</h1>
+       
+<div class="Toolbar">
+    <br>
+    <img id="redPen" src="assets/img/red.png" width="80"  onclick="changeColor('rgb(212,21,29)', this)">
+        <img id="yellPen" src="assets/img/yell.png" width="80"  onclick="changeColor('rgb(255, 255, 0)', this)"> 
+        <img id="violPen" src="assets/img/v.png" width="80"  onclick="changeColor('rgb(128, 0, 128)', this)">
+</div>
+<div class="Toolbar">
+    <br>
+    <img src="http://professorweb.ru/downloads/pen_thin.gif" alt="Тонкая кисть" onclick="changeThickness(1, this)">
+    <img src="http://professorweb.ru/downloads/pen_medium.gif" alt="Нормальная кисть" onclick="changeThickness(5, this)">
+    <img src="http://professorweb.ru/downloads/pen_thick.gif" alt="Толстая кисть" onclick="changeThickness(10, this)">
+</div>
+<canvas id="drawingCanvas" width="500" height="500"></canvas>
+<div class="Toolbar">
+
+    <button onclick="clearCanvas()">Очистить</button>
+
+</div>
+<script src="assets/js/paint.js"></script>
        </article>
+
+       
    </main>
    <nav class="left column">
        <h3>Left heading</h3>

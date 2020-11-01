@@ -1,0 +1,57 @@
+canvas {
+    border: 1px solid #7B899B;
+}
+
+button {
+	color: white;
+    padding: 6px;
+    margin: 7px 2px;
+    font-variant: normal;
+    font-size: 12px;
+    background: rgb(212,75,56); 
+}
+
+button:hover { background: rgb(232,95,76); } 
+button:active { background: rgb(152,15,0); } 
+}
+
+.Toolbar {
+    float: left;
+    font-family: 'Trebuchet MS'; 
+    font-size: 14px;
+    font-variant: small-caps;
+    text-align: center;
+    background: #F2F7FE;
+    padding: 10px 15px 3px 10px;
+    margin-bottom: 1px;
+    margin-right: 1px;
+    border: 1px solid #7B899B;
+}
+
+.CanvasContainer {
+    clear: both;
+}
+
+img {
+	position: top;
+    padding: 2px;
+    border: 2px solid #F2F7FE;
+}
+
+img:hover {
+    border: 2px groove #E4F0FE;
+    background: white;
+}
+
+img.Selected {
+    border: 2px groove #E4F0FE;
+}
+
+/*#savedCopyContainer {
+    display: none;
+}
+
+#savedCopyContainer img {
+    width: 250px;
+    height: 150px;
+}*/
